@@ -88,6 +88,16 @@ namespace Domaci1
         
         private void button1_Click(object sender, EventArgs e)
         {
+            btNEXT.Enabled = true;
+            btDELETE.Enabled = true;
+            btKRAJ.Enabled = true;
+            btPREV.Enabled = true;
+            btPOCETAK.Enabled = true;
+            btUPDATE.Enabled = true;
+            btADDNEW.Enabled = true;
+            tbCENA.Enabled = true;
+            tbKOM.Enabled = true;
+            tbPOPUST.Enabled = true;
             button1.Hide();
             veza = new SqlConnection(cs);
             adapter = new SqlDataAdapter("select * from artikal", veza);
